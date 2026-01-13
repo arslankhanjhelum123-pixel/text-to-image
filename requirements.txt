@@ -1,6 +1,7 @@
 # requirements.txt
 streamlit>=1.28.0
 diffusers>=0.20.0
-torch>=2.0.0
+torch>=2.0.0                  # CPU version is fine (no +cu121 needed)
 transformers>=4.35.0
 pillow>=9.0.0
+accelerate>=0.25.0            # Helps with cpu_offload & memory tricks
